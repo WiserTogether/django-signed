@@ -35,7 +35,7 @@ These functions make use of all of them.
 
 from django.conf import settings
 from django.utils.hashcompat import sha_constructor
-from django.utils import simplejson
+import json
 import hmac, base64
 
 def signature(value, key = None, extra_key = ''):
